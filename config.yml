@@ -1,0 +1,6 @@
+default:
+  driver: ODBC Driver 18 for SQL Server
+  redirect: http://localhost:3838
+
+connect_cloud:
+  driver: SQLServer

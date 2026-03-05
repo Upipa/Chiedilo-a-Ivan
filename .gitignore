@@ -3,4 +3,7 @@
 .RData
 .Ruserdata
 .Rprofile
-renv
+.Renviron
+data_combined.rds
+greeting.md
+.vscode
