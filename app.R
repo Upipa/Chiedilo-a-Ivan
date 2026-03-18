@@ -128,8 +128,9 @@ server <- function(input, output, session) {
   qc <- reactive(querychat(
     consistenza_personale,
     client = "azure_openai/gpt-4.1",
-    data_description = "consistenza_personale.md",
-    extra_instructions = "instructions.md"
+    data_description = "consistenza_personale_description.md",
+    extra_instructions = "instructions.md",
+    greeting = "consistenza_personale_greeting.md"
   ))
 
   enable_bookmarking <- bookmark_store %in% c("url", "server")
