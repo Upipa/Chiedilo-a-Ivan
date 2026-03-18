@@ -125,7 +125,7 @@ server <- function(input, output, session) {
     Driver = config::get("driver"),
     Server = "upipa-acs.database.windows.net",
     Database = "IndicareSaluteLab",
-    UID = Sys.getenv("USER"),
+    UID = Sys.getenv("UID"),
     PWD = Sys.getenv("PASSWORD"),
     Port = 1433
   )
