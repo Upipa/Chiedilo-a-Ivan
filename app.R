@@ -25,7 +25,7 @@ if (pwd == "") {
 }
 
 resource <- c(
-  "https://database.windows.net/.default",
+  "https://graph.microsoft.com/.default",
   "openid",
   "offline_access"
 )
@@ -122,10 +122,12 @@ server <- function(input, output, session) {
 
   con <- dbConnect(
     odbc(),
-    driver = config::get("driver"),
-    server = "upipa-acs.database.windows.net",
-    database = "IndicareSaluteLab",
-    attributes = list(azure_token = access_token)
+    Driver = config::get("driver"),
+    Server = "upipa-acs.database.windows.net",
+    Database = "IndicareSaluteLab",
+    UID = Sys.getenv("USER"),
+    PWD = Sys.getenv("PASSWORD"),
+    Port = 1433
   )
 
   consistenza_personale <- tbl(con, I("consistenza.consistenza_personale")) |>
