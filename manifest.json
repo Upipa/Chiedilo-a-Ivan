@@ -1418,6 +1418,42 @@
         "RemoteSha": "1.0.5"
       }
     },
+    "log4r": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Type": "Package",
+        "Package": "log4r",
+        "Title": "A Fast and Lightweight Logging System for R, Based on 'log4j'",
+        "Version": "0.4.4",
+        "Authors@R": "c(\n    person(\"John Myles\", \"White\", role = c(\"aut\", \"cph\")),\n    person(\"Kenton\", \"White\", role = \"ctb\"),\n    person(\"Kirill\", \"Müller\", email = \"krlmlr+r@mailbox.org\",\n           role = \"ctb\"),\n    person(\"Aaron\", \"Jacobs\", email = \"atheriel@gmail.com\",\n           role = c(\"aut\", \"cre\"))\n    )",
+        "Description": "The log4r package is meant to provide a fast, lightweight,\n  object-oriented approach to logging in R based on the widely-emulated\n  'log4j' system and etymology.",
+        "License": "Artistic-2.0",
+        "URL": "https://github.com/johnmyleswhite/log4r",
+        "BugReports": "https://github.com/johnmyleswhite/log4r/issues",
+        "Suggests": "futile.logger, httr, jsonlite, knitr, lgr, logger, logging,\nloggit, microbenchmark, rlog, rmarkdown, rsyslog, testthat (>=\n3.0.0)",
+        "Encoding": "UTF-8",
+        "LazyLoad": "yes",
+        "RoxygenNote": "7.3.2",
+        "VignetteBuilder": "knitr",
+        "Config/testthat/edition": "3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-10-12 04:35:26 UTC; aaron",
+        "Author": "John Myles White [aut, cph],\n  Kenton White [ctb],\n  Kirill Müller [ctb],\n  Aaron Jacobs [aut, cre]",
+        "Maintainer": "Aaron Jacobs <atheriel@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2024-10-12 05:20:01 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-09 18:42:28 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemoteRef": "log4r",
+        "RemotePkgRef": "log4r",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "0.4.4"
+      }
+    },
     "magrittr": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -2401,19 +2437,19 @@
   },
   "files": {
     ".Renviron": {
-      "checksum": "5aa89b86c5ffaad4fd5a8f1827dc2fa4"
+      "checksum": "7c8a821a720bf2be3d4c0ba92081e031"
     },
     ".Rprofile": {
-      "checksum": "8a83b25130b4f70be98cc4e5b5798baa"
+      "checksum": "d023f0d6034f3171dfb5e9eea6ab9e74"
     },
     ".vscode/settings.json": {
       "checksum": "c4b4fbe34d22c952567a2200145be85c"
     },
     "app.R": {
-      "checksum": "28b8b0c31244e3057dae4e3d15924cc1"
+      "checksum": "1bfffa1d3e3eacf253d65a5d6b6c1928"
     },
     "config.yml": {
-      "checksum": "ae8f7cf42c1789279eaa5154446e0b27"
+      "checksum": "f107a6b37e29fdd11f3b8651f86ba5d3"
     },
     "consistenza_personale_description.md": {
       "checksum": "357f3c353dad25793091e32d6b5e7567"
@@ -2431,7 +2467,7 @@
       "checksum": "d7afdf03358294cabcb21cf4ad257930"
     },
     "renv.lock": {
-      "checksum": "c38e8f34ef9b7cdc5811f40d510830c6"
+      "checksum": "53618b3f340312cee52037179a5938d6"
     }
   },
   "users": null

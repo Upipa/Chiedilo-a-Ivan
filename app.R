@@ -9,6 +9,7 @@ library(DT)
 library(shinychat)
 library(httr)
 library(AzureAuth)
+library(log4r)
 
 
 tenant <- "f017cce5-ae05-41bc-ab46-d4bfe78b7c4c"
@@ -30,6 +31,7 @@ resource <- c(
 )
 
 table_name <- "consistenza_personale"
+log <- logger()
 
 
 ui <- function(req) {
@@ -111,6 +113,12 @@ server <- function(input, output, session) {
   )
   # extract raw access token string
   access_token <- token$credentials$access_token
+
+  if (!is.null(access_token)) {
+    info(log, "Ottenuto token per accedere al database")
+  } else {
+    fatal(log, "Non è stato possibile ottenere un token d'accesso al database")
+  }
 
   con <- dbConnect(
     odbc(),
