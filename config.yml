@@ -4,4 +4,4 @@ default:
 
 connect_cloud:
   driver: SQLServer
-  REDIRECT: https://rilevazioniupipa-chiedilo-a-ivan.share.connect.posit.cloud
+  redirect: https://rilevazioniupipa-chiedilo-a-ivan.share.connect.posit.cloud
