@@ -819,6 +819,49 @@
         "RemoteSha": "1.2.0"
       }
     },
+    "duckdb": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "duckdb",
+        "Title": "DBI Package for the DuckDB Database Management System",
+        "Version": "1.5.0",
+        "Authors@R": "c(\n    person(\"Hannes\", \"Mühleisen\", , \"hannes@cwi.nl\", role = \"aut\",\n           comment = c(ORCID = \"0000-0001-8552-0029\")),\n    person(\"Mark\", \"Raasveldt\", , \"mark.raasveldt@cwi.nl\", role = \"aut\",\n           comment = c(ORCID = \"0000-0001-5005-6844\")),\n    person(\"Kirill\", \"Müller\", , \"kirill@cynkra.com\", role = \"cre\",\n           comment = c(ORCID = \"0000-0002-1416-3412\")),\n    person(\"Stichting DuckDB Foundation\", role = \"cph\"),\n    person(\"Apache Software Foundation\", role = \"cph\"),\n    person(\"PostgreSQL Global Development Group\", role = \"cph\"),\n    person(\"The Regents of the University of California\", role = \"cph\"),\n    person(\"Cameron Desrochers\", role = \"cph\"),\n    person(\"Victor Zverovich\", role = \"cph\"),\n    person(\"RAD Game Tools\", role = \"cph\"),\n    person(\"Valve Software\", role = \"cph\"),\n    person(\"Rich Geldreich\", role = \"cph\"),\n    person(\"Tenacious Software LLC\", role = \"cph\"),\n    person(\"The RE2 Authors\", role = \"cph\"),\n    person(\"Google Inc.\", role = \"cph\"),\n    person(\"Facebook Inc.\", role = \"cph\"),\n    person(\"Steven G. Johnson\", role = \"cph\"),\n    person(\"Jiahao Chen\", role = \"cph\"),\n    person(\"Tony Kelman\", role = \"cph\"),\n    person(\"Jonas Fonseca\", role = \"cph\"),\n    person(\"Lukas Fittl\", role = \"cph\"),\n    person(\"Salvatore Sanfilippo\", role = \"cph\"),\n    person(\"Art.sy, Inc.\", role = \"cph\"),\n    person(\"Oran Agra\", role = \"cph\"),\n    person(\"Redis Labs, Inc.\", role = \"cph\"),\n    person(\"Melissa O'Neill\", role = \"cph\"),\n    person(\"PCG Project contributors\", role = \"cph\")\n  )",
+        "Description": "The DuckDB project is an embedded analytical data management\n    system with support for the Structured Query Language (SQL). This\n    package includes all of DuckDB and an R Database Interface (DBI)\n    connector.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://r.duckdb.org/, https://github.com/duckdb/duckdb-r",
+        "BugReports": "https://github.com/duckdb/duckdb-r/issues",
+        "Depends": "DBI, R (>= 4.1.0)",
+        "Imports": "methods, utils",
+        "Suggests": "adbcdrivermanager, arrow (>= 13.0.0), bit64, callr, clock,\nDBItest, dbplyr, dplyr, rlang, testthat (>= 3.0.0), tibble,\nvctrs, withr",
+        "Biarch": "true",
+        "Config/build/compilation-database": "false",
+        "Config/build/never-clean": "true",
+        "Config/comment/compilation-database": "Generate manually with\npkgload:::generate_db() for faster pkgload::load_all()",
+        "Config/gha/extra-packages": "arrow=?ignore-before-r=4.2.0\nadbcdrivermanager=?ignore-before-r=4.2.0",
+        "Config/gha/filter": "os != \"windows-latest\" | r != \"4.1\"",
+        "Config/gha/filter-note": "Inexplicable build failures on Windows GHA with\nR 4.1, works locally",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.3.9000",
+        "SystemRequirements": "xz (for building from source)",
+        "NeedsCompilation": "yes",
+        "Packaged": "2026-03-12 11:02:45 UTC; kirill",
+        "Author": "Hannes Mühleisen [aut] (ORCID: <https://orcid.org/0000-0001-8552-0029>),\n  Mark Raasveldt [aut] (ORCID: <https://orcid.org/0000-0001-5005-6844>),\n  Kirill Müller [cre] (ORCID: <https://orcid.org/0000-0002-1416-3412>),\n  Stichting DuckDB Foundation [cph],\n  Apache Software Foundation [cph],\n  PostgreSQL Global Development Group [cph],\n  The Regents of the University of California [cph],\n  Cameron Desrochers [cph],\n  Victor Zverovich [cph],\n  RAD Game Tools [cph],\n  Valve Software [cph],\n  Rich Geldreich [cph],\n  Tenacious Software LLC [cph],\n  The RE2 Authors [cph],\n  Google Inc. [cph],\n  Facebook Inc. [cph],\n  Steven G. Johnson [cph],\n  Jiahao Chen [cph],\n  Tony Kelman [cph],\n  Jonas Fonseca [cph],\n  Lukas Fittl [cph],\n  Salvatore Sanfilippo [cph],\n  Art.sy, Inc. [cph],\n  Oran Agra [cph],\n  Redis Labs, Inc. [cph],\n  Melissa O'Neill [cph],\n  PCG Project contributors [cph]",
+        "Maintainer": "Kirill Müller <kirill@cynkra.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2026-03-14 16:40:21 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2026-03-15 04:47:47 UTC; windows",
+        "Archs": "x64",
+        "RemoteType": "standard",
+        "RemoteRef": "duckdb",
+        "RemotePkgRef": "duckdb",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "x86_64-w64-mingw32",
+        "RemoteSha": "1.5.0"
+      }
+    },
     "ellmer": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -2659,13 +2702,13 @@
       "checksum": "0be5cdebf3fb7a0865f5c52ec1afbea7"
     },
     ".Rprofile": {
-      "checksum": "d6adaaaafdb83c33d59936bb279b8054"
+      "checksum": "7f7bc3e12f92ea1510b513f9152dfa9e"
     },
     ".vscode/settings.json": {
       "checksum": "c4b4fbe34d22c952567a2200145be85c"
     },
     "app.R": {
-      "checksum": "5e3ab88d68e20df77a758a5ae092255d"
+      "checksum": "446ec317b9c3c367749ecd3cee65f282"
     },
     "config.yml": {
       "checksum": "f107a6b37e29fdd11f3b8651f86ba5d3"
@@ -2686,7 +2729,7 @@
       "checksum": "d7afdf03358294cabcb21cf4ad257930"
     },
     "renv.lock": {
-      "checksum": "dc0d5eabe6c668c983fa4f6ac6d639f5"
+      "checksum": "3902ed35dc913f6e886cc6db1359915e"
     }
   },
   "users": null

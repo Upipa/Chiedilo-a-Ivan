@@ -11,6 +11,7 @@ library(httr)
 library(AzureAuth)
 library(log4r)
 library(dbplyr)
+library(duckdb)
 
 
 tenant <- "f017cce5-ae05-41bc-ab46-d4bfe78b7c4c"
