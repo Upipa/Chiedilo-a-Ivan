@@ -30,7 +30,6 @@ resource <- c(
 )
 
 table_name <- "consistenza_personale"
-bookmark_store <- "url"
 
 
 ui <- function(req) {
@@ -133,8 +132,6 @@ server <- function(input, output, session) {
     greeting = "consistenza_personale_greeting.md"
   ))
 
-  enable_bookmarking <- bookmark_store %in% c("url", "server")
-
   invalidator <- reactive({
     invalidateLater(1000)
     Sys.time()
@@ -144,7 +141,7 @@ server <- function(input, output, session) {
 
   observe(
     {
-      qc()$server(enable_bookmarking = enable_bookmarking) |>
+      qc()$server() |>
         qc_vals()
     }
   ) |>
@@ -218,4 +215,4 @@ server <- function(input, output, session) {
   })
 }
 
-shinyApp(ui, server, enableBookmarking = bookmark_store)
+shinyApp(ui, server)
